@@ -1,0 +1,10 @@
+---
+# This playbook deploys a Splunk master server
+
+- hosts: web-server
+  become: yes
+  become_method: sudo
+
+  roles:
+    - apache
+
